@@ -5,7 +5,7 @@ import { supabase } from '@/lib/supabase'
 import TablaColaboradores from './components/TablaColaboradores'
 import CalendarioCoincidencias from './components/CalendarioCoincidencias'
 import HistorialVacaciones from './components/HistorialVacaciones'
-
+export const dynamic = 'force-dynamic';
 export default function Home() {
   const [activeTab, setActiveTab] = useState<'saldos' | 'calendario' | 'historial'>('saldos')
   const [colaboradores, setColaboradores] = useState<any[]>([])
